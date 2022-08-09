@@ -936,6 +936,8 @@ portfolio-btn:not(:last-child) {
   background-image: url(../images/modal-window/Vector.png);
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
 
 .modal-form-check:focus + .modal-form-check-desc::before {
@@ -945,17 +947,18 @@ portfolio-btn:not(:last-child) {
 .modal-form-submit {
   align-self: center;
   min-width: 150px;
+  height: 50px;
   line-height: 1.87;
   color: #ffffff;
   background: var(--accent-color);
   font-family: inherit;
   letter-spacing: 0.06em;
   border-radius: 4px;
-  /* margin-top: 30px; */
+  border: none;
   transition: var(--transition-dur-and-fun);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.modal-form-submit:hover,
+
 .modal-form-submit:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -991,8 +994,7 @@ portfolio-btn:not(:last-child) {
 
 .footer-subscription-container {
   align-items: center;
-  width: 570px;
-  height: 86px;
+
   padding-left: 93px;
   background-color: #2f303a;
 }
@@ -1009,13 +1011,20 @@ portfolio-btn:not(:last-child) {
   line-height: 1.88;
   color: #ffffff;
 }
+
 .footer-form-input {
   height: 50px;
+  width: 358px;
   padding: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-form-lable {
