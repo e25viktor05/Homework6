@@ -1,7 +1,7 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --accent-color: #2196f3;
-  --transition-dur-and-fun: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-fun: 2250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 h1,
 h2,
@@ -194,6 +194,7 @@ body {
   border-radius: 4px;
   margin-top: 30px;
   transition: var(--transition-dur-and-fun);
+  border: none;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -697,9 +698,9 @@ portfolio-btn:not(:last-child) {
 }
 
 .team-list-link-wrapper {
-  transition: box-shadow var(--transition-dur-and-fun), background var(--transition-dur-and-fun);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: background var(--transition-dur-and-fun);
+  /* box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .team-list-link-wrapper:hover,
@@ -791,7 +792,7 @@ portfolio-btn:not(:last-child) {
   padding: 40px;
 }
 
-.modal-close-btn {
+.modal-close-btn-icon {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -811,7 +812,7 @@ portfolio-btn:not(:last-child) {
   border-color: var(--accent-color);
 }
 
-.modal-close-btn-icon {
+.button {
   transition: fill var(--transition-dur-and-fun);
   position: absolute;
   top: 8px;
@@ -819,7 +820,6 @@ portfolio-btn:not(:last-child) {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   border-radius: 50%;
-  transition: border-color var(--transition-dur-and-fun);
 }
 
 .modal-close-btn:hover .modal-close-btn-icon,
@@ -838,7 +838,7 @@ portfolio-btn:not(:last-child) {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 
 .modal-form {
@@ -933,6 +933,8 @@ portfolio-btn:not(:last-child) {
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
   background-image: url(../images/modal-window/Vector.png);
+  background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 .modal-form-check:focus + .modal-form-check-desc::before {
@@ -957,4 +959,65 @@ portfolio-btn:not(:last-child) {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-/* ====== / MODAL FORM ======= */ ;
+
+.agree-to-subscription {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.accept-terms-link {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+
+/* ====== / MODAL FORM ======= */
+
+/* <!-- ==== Subscribtion to the newsletter (footer) ==== --> */
+.footer-subscribe-to-newsletter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.footer-subscription-container {
+  align-items: center;
+  width: 570px;
+  height: 86px;
+  padding-left: 93px;
+  background-color: #2f303a;
+}
+
+.footer-subscription-button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #ffffff;
+}
+.footer-form-input {
+  height: 50px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.footer-form-lable {
+  border-radius: 4px;
+}
+/* <!-- ==== / End of Subscribtion to the newsletter (footer)==== --> */
